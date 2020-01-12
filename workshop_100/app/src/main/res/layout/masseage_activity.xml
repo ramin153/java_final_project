@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark_pri_round"
+    android:layout_marginHorizontal="@dimen/md_size"
+    android:layout_marginVertical="@dimen/sm_size">
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/sm_b_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/massage_title_activity"
+            android:layout_width="@dimen/Place_for_sm_text"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right_round_light"
+            android:text="title"
+            android:paddingVertical="@dimen/sm_b_size"
+            android:paddingHorizontal="@dimen/md_lg_size"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark_2"
+            android:textSize="@dimen/md_lg_font"
+            android:layout_gravity="left|center"
+            android:gravity="center|left"
+            android:layout_marginLeft="@dimen/sm_s_size"
+            />
+
+        <TextView
+            android:id="@+id/massage_data_activity"
+            android:layout_width="@dimen/Place_for_sm_text"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_round_light"
+            android:text="data"
+            android:paddingVertical="@dimen/sm_b_size"
+            android:paddingHorizontal="@dimen/md_lg_size"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/md_b_font"
+            android:layout_gravity="right|center"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/sm_s_size"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/md_size"
+        android:layout_marginHorizontal="@dimen/md_size"
+        android:layout_marginBottom="@dimen/sm_s_size"
+        android:id="@+id/massage_detail_activity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Place_for_big_md"
+        android:background="@drawable/round_top_light_border"
+        android:text="some thing"
+        android:paddingVertical="@dimen/sm_s_size"
+        android:paddingHorizontal="@dimen/md_lg_size"
+        android:textColor="@color/colorPrimaryDark_2"
+        android:textSize="@dimen/md_font"
+        android:layout_gravity="center|top"
+        android:padding="@dimen/md_size"
+        android:gravity="top|center"
+        />
+
+
+
+</LinearLayout>

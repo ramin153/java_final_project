@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="sm_s_size">2dp</dimen>
+    <dimen name="sm_ss_size">1dp</dimen>
+
+    <dimen name="sm_size">6dp</dimen>
+    <dimen name="sm_b_size">8dp</dimen>
+
+    <dimen name="md_size">12dp</dimen>
+    <dimen name="md_b_size">16dp</dimen>
+    <dimen name="md_lg_size">20dp</dimen>
+
+    <dimen name="lg_size">24dp</dimen>
+    <dimen name="lg_b_size">32dp</dimen>
+
+    <dimen name="lg_max_size">36dp</dimen>
+    <dimen name="lg_max_max_size">44dp</dimen>
+
+    <dimen name="sm_font">6sp</dimen>
+    <dimen name="sm_b_font">8sp</dimen>
+
+    <dimen name="md_font">12sp</dimen>
+    <dimen name="md_n_font">14sp</dimen>
+    <dimen name="md_b_font">16sp</dimen>
+
+    <dimen name="md_lg_font">20sp</dimen>
+
+    <dimen name="lg_font">24sp</dimen>
+    <dimen name="lg_b_font">32sp</dimen>
+
+    <dimen name="lg_max_font">36sp</dimen>
+
+    <dimen name="normall_width_mg">40dp</dimen>
+
+    <dimen name="avater_size_3_half">120dp</dimen>
+    <dimen name="avater_size">80dp</dimen>
+    <dimen name="avater_half_size">40dp</dimen>
+    <dimen name="profile_topImage">160dp</dimen>
+    <dimen name="Place_for_sm_text">120dp</dimen>
+    <dimen name="Place_for_big_md">80dp</dimen>
+    <dimen name="edit_text_hegit_normall">80dp</dimen>
+    <dimen name="card_image_top_img_size">150dp</dimen>
+    <dimen name="card_image_size">100dp</dimen>
+
+</resources>

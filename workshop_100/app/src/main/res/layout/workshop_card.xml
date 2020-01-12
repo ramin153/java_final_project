@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/md_size"
+    android:paddingVertical="@dimen/sm_size"
+
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="@dimen/card_image_size"
+        android:layout_height="@dimen/card_image_size"
+        android:layout_marginBottom="@dimen/sm_b_size"
+        app:riv_corner_radius="@dimen/sm_size"
+        android:scaleType="centerCrop"
+        android:background="@color/colorDark"
+        android:layout_marginVertical="@dimen/md_size"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/card_work_shop_title"
+        android:text="title"
+        android:textSize="@dimen/md_b_size"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/card_work_shop_maneger"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="maneger"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+
+        android:textSize="@dimen/md_b_size" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="price :"
+            android:textSize="@dimen/md_b_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic"
+            android:paddingRight="@dimen/sm_s_size"
+            />
+
+        <TextView
+            android:id="@+id/card_work_shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12$"
+            android:textSize="@dimen/md_b_size"
+            android:textColor="@color/colorPrimaryDark_2"
+            android:textStyle="italic"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

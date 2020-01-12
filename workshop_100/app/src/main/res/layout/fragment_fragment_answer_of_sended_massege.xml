@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_answer_of_sended_massege">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normall_width_mg"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/sm_b_size"
+            android:src="@drawable/ic_avatar"
+            android:padding="@dimen/sm_size"
+            android:background="@drawable/dark_round"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/lg_font"
+            android:text="Work shop "
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="@dimen/md_size"
+            />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bootom_line_dark"
+            android:layout_marginVertical="@dimen/sm_size"
+
+            >
+            <ImageView
+                android:layout_margin="@dimen/sm_size"
+                android:layout_width="@dimen/lg_b_size"
+                android:layout_height="@dimen/lg_b_size"
+                android:src="@drawable/ic_key"
+                android:layout_gravity="center"
+                />
+            <EditText
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:inputType="textEmailAddress"
+                />
+        </LinearLayout>
+
+
+
+        <Button
+
+            android:id="@+id/fragment_sended_email_check_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/md_size"
+            android:layout_marginTop="@dimen/md_size"
+            android:layout_marginBottom="@dimen/sm_size"
+            android:text="check the email"
+            android:textSize="@dimen/md_b_size"
+            android:textColor="@color/colorDark_2"
+            android:background="@drawable/btn_change_primey_accent"
+            android:textAllCaps="false"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:text="didn't you receive  the email yet"
+            android:paddingHorizontal="@dimen/md_b_size"
+            android:layout_marginTop="@dimen/lg_size"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="1:00"
+            android:textSize="@dimen/md_lg_font"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="@dimen/sm_s_size"
+            />
+
+        <Button
+            android:id="@+id/fragment_sended_masege_send_again"
+            android:layout_marginVertical="@dimen/sm_b_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_change_color_darkaccent_light"
+            android:textColor="@color/colorLight_2"
+            android:text="send again"
+            android:paddingHorizontal="@dimen/md_lg_size"
+            android:textAllCaps="false"
+            android:textSize="@dimen/md_b_size"
+        />
+
+
+    </LinearLayout>
+
+</FrameLayout>

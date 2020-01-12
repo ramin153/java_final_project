@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment_fragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="@dimen/lg_max_size"
+       android:background="@drawable/sm_round_dark_pri"
+       android:layout_gravity="center"
+       android:orientation="vertical"
+       android:paddingVertical="@dimen/lg_size"
+       android:paddingHorizontal="@dimen/md_lg_size"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textColor="@color/colorPrimaryDark"
+           android:textSize="@dimen/md_lg_font"
+           android:text="Payment"
+           android:textStyle="italic|bold"
+           />
+
+       <ImageView
+           android:layout_width="@dimen/avater_size_3_half"
+           android:layout_height="@dimen/avater_size_3_half"
+           android:layout_gravity="center"
+           android:layout_marginVertical="@dimen/md_size"
+           android:background="@drawable/dark_pri_round"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/md_b_font"
+           android:textColor="@color/colorPrimaryDark"
+           android:layout_gravity="center"
+           android:text="userName"
+           />
+
+       <LinearLayout
+           android:layout_marginTop="@dimen/sm_size"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:orientation="horizontal"
+           >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textSize="@dimen/md_b_font"
+               android:paddingHorizontal="@dimen/sm_size"
+               android:text="name"
+               />
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textSize="@dimen/md_b_font"
+               android:paddingHorizontal="@dimen/sm_size"
+               android:text="lastName"
+
+               />
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               />
+
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_marginTop="@dimen/md_b_size"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/md_b_font"
+           android:gravity="center"
+           android:text="number of installment\nis remind"
+           android:textColor="@color/colorPrimaryDark"
+           android:textStyle="italic"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="1"
+           android:textStyle="bold"
+           android:textColor="@color/colorPrimaryDark_2"
+           android:textSize="@dimen/lg_font"
+           android:paddingHorizontal="@dimen/lg_size"
+           android:paddingTop="@dimen/sm_b_size"
+           android:paddingBottom="@dimen/sm_s_size"
+           android:background="@drawable/bootom_line_dark"
+           />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="@dimen/lg_size"
+           >
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="@dimen/lg_max_size"
+               android:layout_weight="1"
+               android:background="@drawable/btn_change_color_darkaccent_light"
+               android:textColor="@color/colorLight_2"
+
+               android:text="Pay"
+               android:textAllCaps="false"
+               android:textSize="@dimen/md_lg_font"
+               android:layout_marginHorizontal="@dimen/sm_size"
+               android:textStyle="italic"
+               />
+
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="@dimen/lg_max_size"
+               android:layout_weight="1"
+               android:background="@drawable/btn_change_accent_primerydark"
+               android:textColor="@color/colorLight_2"
+               android:text="undo"
+               android:textAllCaps="false"
+               android:textSize="@dimen/md_lg_font"
+               android:layout_marginHorizontal="@dimen/sm_size"
+               android:textStyle="italic"
+
+               />
+
+
+       </LinearLayout>
+
+
+       <Button
+           android:layout_marginTop="@dimen/sm_b_size"
+            android:layout_marginBottom="@dimen/lg_max_max_size"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/lg_max_size"
+           android:layout_weight="1"
+           android:background="@drawable/btn_change_primey_accent"
+           android:textColor="@color/colorPrimaryDark"
+           android:text="save"
+           android:textAllCaps="false"
+           android:textSize="@dimen/md_lg_font"
+           android:layout_marginHorizontal="@dimen/lg_max_size"
+           android:textStyle="italic"
+           />
+
+   </LinearLayout>
+
+
+</FrameLayout>

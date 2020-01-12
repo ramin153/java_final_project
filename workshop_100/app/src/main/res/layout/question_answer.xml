@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/md_b_size">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/md_n_font"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="question:"
+        android:id="@+id/question_answer_q_recyclerView"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingLeft="@dimen/md_size"
+        android:textColor="@color/colorPrimaryDark_2"
+        android:text="answer"
+        android:textSize="@dimen/md_n_font"
+        android:id="@+id/question_answer_A_recyclerView"
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/sm_size"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/dark_pri_round"
+        />
+
+
+
+</LinearLayout>

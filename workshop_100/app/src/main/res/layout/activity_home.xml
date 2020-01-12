@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_light">
+
+    <FrameLayout
+        android:id="@+id/main_homeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/sm_size"
+        android:layoutDirection="ltr"
+        android:background="@drawable/round_top_light_border"
+        >
+
+        <ImageView
+            android:onClick="switchPart"
+            android:id="@+id/home_icon"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/lg_b_size"
+            android:src="@drawable/ic_home_outline_2"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tag="1"
+            />
+
+        <ImageView
+            android:onClick="switchPart"
+            android:id="@+id/serach_icon"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/lg_b_size"
+            android:src="@drawable/ic_search_outline"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tag="2"
+            />
+
+        <ImageView
+            android:onClick="switchPart"
+            android:id="@+id/massage_icon"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/lg_b_size"
+            android:src="@drawable/ic_email_outline"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tag="3"
+            />
+
+        <ImageView
+            android:onClick="switchPart"
+            android:id="@+id/profile_icon"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/lg_b_size"
+            android:src="@drawable/ic_user_"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tag="4"
+            />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

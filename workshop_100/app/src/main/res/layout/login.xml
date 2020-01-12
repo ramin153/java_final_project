@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background_Image_login"
+        android:src="@drawable/bg_img_sign"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normall_width_mg"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/sm_b_size"
+            android:src="@drawable/ic_avatar"
+            android:padding="@dimen/sm_size"
+            android:background="@drawable/dark_round"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/lg_font"
+            android:text="Work shop "
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="@dimen/md_size"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bootom_line_dark"
+            android:layout_marginVertical="@dimen/sm_size"
+
+            >
+            <ImageView
+                android:layout_margin="@dimen/sm_size"
+                android:layout_width="@dimen/lg_b_size"
+                android:layout_height="@dimen/lg_b_size"
+                android:src="@drawable/ic_user_"
+                android:layout_gravity="center"
+                />
+            <EditText
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bootom_line_dark"
+            android:layout_marginVertical="@dimen/sm_size"
+
+            >
+            <ImageView
+                android:layout_margin="@dimen/sm_size"
+                android:layout_width="@dimen/lg_b_size"
+                android:layout_height="@dimen/lg_b_size"
+                android:src="@drawable/ic_lock"
+                android:layout_gravity="center"
+                />
+            <EditText
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                />
+        </LinearLayout>
+
+        <Button
+            android:onClick="loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/md_size"
+            android:layout_marginTop="@dimen/md_size"
+            android:layout_marginBottom="@dimen/sm_size"
+            android:text="Login"
+            android:textSize="@dimen/md_b_size"
+            android:textColor="@color/colorDark_2"
+            android:background="@drawable/btn_change_primey_accent"
+            android:textAllCaps="false"
+            />
+
+        <TextView
+            android:onClick="forgotPassword_act"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/md_font"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="forgot password?"
+            android:padding="0dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="#0000"
+            android:textStyle="normal"
+            android:layout_marginTop="@dimen/sm_b_size"
+            android:layout_marginBottom="@dimen/lg_size"
+            android:elevation="@dimen/md_size"
+            android:shadowColor="@color/colorPrimaryShadow"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/md_size"
+
+            >
+                <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sm_s_size"
+                android:layout_weight="1"
+                android:background="@drawable/dark_rectangle"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/md_font"
+                android:text="didn't sign up yet?"
+                android:textColor="@color/colorPrimaryShadow"
+                android:layout_margin="@dimen/sm_size"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sm_s_size"
+                android:layout_weight="1"
+                android:background="@drawable/dark_rectangle"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:onClick="SignUp"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="@dimen/lg_max_size"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/md_size"
+            android:text="SignUp"
+            android:textSize="@dimen/md_b_size"
+            android:textColor="@color/colorLight_2"
+            android:background="@drawable/btn_change_color_darkaccent_light"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

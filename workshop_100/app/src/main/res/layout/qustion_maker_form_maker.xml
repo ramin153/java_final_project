@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/lg_size"
+    android:paddingHorizontal="@dimen/md_size">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/md_size"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorPrimaryDark_2"
+            android:text="answer"
+            android:visibility="visible"
+            android:textSize="@dimen/md_n_font"
+            android:id="@+id/qustion_maker_form_text"
+
+            />
+
+        <EditText
+            android:id="@+id/qustion_maker_form_textToChange"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorPrimaryDark_2"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="@dimen/md_n_font"
+
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/lg_size"
+        >
+
+
+        <Button
+            android:id="@+id/qustion_maker_form_delete"
+
+            android:layout_width="0dp"
+            android:layout_height="@dimen/lg_b_size"
+            android:layout_weight="1"
+            android:background="@drawable/btn_change_accent_primerydark"
+            android:textColor="@color/colorLight_2"
+            android:text="delete"
+            android:textAllCaps="false"
+            android:textSize="@dimen/md_b_font"
+            android:layout_marginHorizontal="@dimen/sm_size"
+            android:textStyle="italic"
+
+            />
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/lg_b_size"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/qustion_maker_form_change"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/btn_change_primey_accent"
+                android:textColor="@color/colorPrimaryDark"
+
+                android:text="change"
+                android:textAllCaps="false"
+                android:textSize="@dimen/md_b_font"
+                android:layout_marginHorizontal="@dimen/sm_size"
+                android:textStyle="italic"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/qustion_maker_form_save"
+
+                android:background="@drawable/btn_change_color_darkaccent_light"
+                android:textColor="@color/colorLight_2"
+                android:visibility="gone"
+                android:text="save"
+                android:textAllCaps="false"
+                android:textSize="@dimen/md_b_font"
+                android:layout_marginHorizontal="@dimen/sm_size"
+                android:textStyle="italic"
+                />
+
+        </FrameLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/sm_size"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/dark_pri_round"
+        />
+
+</LinearLayout>

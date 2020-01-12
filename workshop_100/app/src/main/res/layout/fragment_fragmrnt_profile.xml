@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmrntProfile"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/md_size"
+        android:paddingTop="@dimen/sm_size"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="@dimen/sm_size"
+            android:text="UserName"
+            android:textColor="@color/colorPrimaryDark_2"
+            android:textSize="@dimen/lg_font"
+            android:textStyle="bold|italic"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/lg_b_size"
+            android:layout_height="@dimen/lg_b_size"
+            android:layout_gravity="right|center"
+            android:src="@drawable/ic_settings_outline"
+            android:layout_margin="@dimen/sm_size"
+            android:id="@+id/Fragement_profile_setting"
+            android:clickable="true"
+            />
+
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sm_ss_size"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="bottom"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/avater_size"
+            android:layout_height="@dimen/avater_size"
+            android:layout_margin="@dimen/md_size"
+            android:src="@drawable/ic_avatar"
+            android:background="@drawable/dark_round"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginRight="@dimen/md_b_size"
+            android:layout_marginVertical="@dimen/md_b_size"
+            >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/sm_ss_size"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="grader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/md_b_font"
+                    android:layout_marginTop="@dimen/sm_size"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark_2"
+                    android:gravity="center"
+                    android:layout_gravity="top"
+                    android:textSize="@dimen/lg_font"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/sm_ss_size"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="grader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/md_b_font"
+                    android:layout_marginTop="@dimen/sm_size"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark_2"
+                    android:gravity="center"
+                    android:layout_gravity="top"
+                    android:textSize="@dimen/lg_font"
+                    />
+
+
+
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/sm_ss_size"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="grader"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/md_b_font"
+                    android:layout_marginTop="@dimen/sm_size"
+                    />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark_2"
+                    android:gravity="center"
+                    android:layout_gravity="top"
+                    android:textSize="@dimen/lg_font"
+                    />
+
+
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name last_name"
+        android:textSize="@dimen/md_b_font"
+        android:textColor="@color/colorPrimaryDark_2"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="@dimen/md_size"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name last_name"
+        android:textSize="@dimen/md_font"
+        android:textColor="@color/colorPrimaryDark_2"
+        android:textStyle="normal"
+        android:layout_marginHorizontal="@dimen/md_b_size"
+        android:layout_marginTop="@dimen/sm_ss_size"
+        />
+
+
+
+</LinearLayout>

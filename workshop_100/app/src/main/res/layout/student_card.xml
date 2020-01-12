@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/md_size"
+    android:layout_marginHorizontal="@dimen/sm_size"
+    android:padding="@dimen/md_size"
+    android:background="@drawable/round_line_dark_pri">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:padding="@dimen/sm_size"
+            android:layout_width="@dimen/card_image_size"
+            android:layout_height="@dimen/card_image_size"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/md_size"
+        android:background="@drawable/dark_pri_round"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingRight="@dimen/md_size"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/md_lg_font"
+            android:text="UserName"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/sm_size"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/md_size"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/md_lg_font"
+                android:text="Name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/md_size"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/md_lg_font"
+                android:text="lastName"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
