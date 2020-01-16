@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/sm_size"
+    android:layout_marginVertical="@dimen/md_size">
+
+    <ImageView
+        android:layout_width="@dimen/work_shp_car"
+        android:layout_height="@dimen/work_shp_car"
+        android:background="@drawable/bg_top_round_dark_pri"
+        android:padding="@dimen/sm_size"
+        android:src="@drawable/ic_forms" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sm_s_size"
+        android:background="@color/colorPrimaryDark"
+        android:text="FormName"
+        android:textColor="@color/colorLight_2"
+        android:gravity="center"
+        android:id="@+id/form_layout_form_name"
+        />
+
+
+
+</LinearLayout>

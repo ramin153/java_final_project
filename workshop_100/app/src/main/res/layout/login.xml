@@ -58,6 +58,7 @@
                 android:layout_gravity="center"
                 />
             <EditText
+                android:id="@+id/Login_acti_username"
                 android:layout_gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -82,11 +83,13 @@
                 android:layout_gravity="center"
                 />
             <EditText
+                android:id="@+id/login_acti_password"
                 android:layout_gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#0000"
+                android:inputType="textPassword"
                 />
         </LinearLayout>
 

@@ -4,133 +4,187 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fill_the_From_Fragment"
-    android:padding="@dimen/md_lg_size"
+    android:paddingHorizontal="@dimen/md_lg_size"
+    android:paddingTop="@dimen/md_lg_size"
+
     android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="In the name of Lord"
-        android:textSize="@dimen/lg_font"
-        android:textColor="@color/colorPrimaryDark"
-        android:textStyle="italic|bold"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/md_size"
-        />
 
-    <LinearLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/md_size">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the name of Lord"
+                android:textSize="@dimen/lg_font"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="italic|bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/md_size"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/md_size"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/md_lg_font"
+                    android:text="11/11/11"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/md_lg_font"
+                    android:text="group title"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="right"
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student :"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/md_lg_font"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/md_size"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:layout_marginRight="@dimen/md_size"
+                    android:textColor="@color/colorPrimaryDark_2"
+                    android:textSize="@dimen/md_n_font"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lastName"
+
+                    android:textColor="@color/colorPrimaryDark_2"
+                    android:textSize="@dimen/md_n_font"
+
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grader :"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/md_lg_font"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/md_size"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:layout_marginRight="@dimen/md_size"
+                    android:textColor="@color/colorPrimaryDark_2"
+                    android:textSize="@dimen/md_n_font"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lastName"
+
+                    android:textColor="@color/colorPrimaryDark_2"
+                    android:textSize="@dimen/md_n_font"
+
+                    />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_fill_the_form_recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_line_dark_pri"
+                android:paddingHorizontal="@dimen/md_size"
+                android:paddingVertical="@dimen/md_lg_size"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="@dimen/md_size"
 
+        android:layout_marginBottom="@dimen/sm_size"
         >
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:layout_width="@dimen/Place_for_sm_text"
+            android:layout_marginLeft="@dimen/md_size"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/btn_change_accent_primerydark"
+            android:textColor="@color/colorLight_2"
+            android:text="Back"
             android:textSize="@dimen/md_lg_font"
-            android:text="11/11/11"
-            android:textStyle="bold"
-            android:gravity="left"
+            android:textAllCaps="false"
+
             />
-        <TextView
-            android:layout_width="0dp"
+
+        <Button
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_width="@dimen/Place_for_sm_text"
+            android:layout_marginRight="@dimen/md_size"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:background="@drawable/btn_change_primey_accent"
+            android:textColor="@color/colorDark_2"
+            android:text="Save"
             android:textSize="@dimen/md_lg_font"
-            android:text="group title"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"
-            android:gravity="right"
+            android:textAllCaps="false"
             />
-
-
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Student :"
-        android:textStyle="italic"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="@dimen/md_lg_font"
-
-        />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="@dimen/md_size"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="name"
-            android:layout_marginRight="@dimen/md_size"
-            android:textColor="@color/colorPrimaryDark_2"
-            android:textSize="@dimen/md_n_font"
-
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="lastName"
-
-            android:textColor="@color/colorPrimaryDark_2"
-            android:textSize="@dimen/md_n_font"
-
-            />
-
-    </LinearLayout>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Grader :"
-        android:textStyle="italic"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="@dimen/md_lg_font"
-
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="@dimen/md_size"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="name"
-            android:layout_marginRight="@dimen/md_size"
-            android:textColor="@color/colorPrimaryDark_2"
-            android:textSize="@dimen/md_n_font"
-
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="lastName"
-
-            android:textColor="@color/colorPrimaryDark_2"
-            android:textSize="@dimen/md_n_font"
-
-            />
-
-    </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/round_line_dark_pri"
-        android:paddingHorizontal="@dimen/md_size"
-        android:paddingVertical="@dimen/md_lg_size"
-        />
-
-    (1 + 2z + z^2)/(3 + z )
+    </FrameLayout>
 </LinearLayout>

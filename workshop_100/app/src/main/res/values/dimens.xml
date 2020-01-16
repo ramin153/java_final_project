@@ -43,4 +43,8 @@
     <dimen name="card_image_top_img_size">150dp</dimen>
     <dimen name="card_image_size">100dp</dimen>
 
+    <dimen name="card_image_sm_size">75dp</dimen>
+
+    <dimen name="work_shp_car">110dp</dimen>
+
 </resources>

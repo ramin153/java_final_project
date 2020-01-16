@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentChoseForm"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="All Forms"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/lg_b_font"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/sm_size"
+                android:layout_marginBottom="@dimen/md_size"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dark_pri_round"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/md_size"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Fragment_chose_form_recyle_view"
+                    />
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sm_size"
+        >
+
+        <Button
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/lg_max_max_size"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_change_accent_primerydark"
+            android:textColor="@color/colorLight_2"
+            android:text="Back"
+            android:textSize="@dimen/md_lg_font"
+            android:textAllCaps="false"
+
+            />
+    </FrameLayout>
+
+</LinearLayout>

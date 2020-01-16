@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="@dimen/md_size"
+    android:layout_marginVertical="@dimen/sm_b_size"
     android:layout_marginHorizontal="@dimen/sm_size"
-    android:padding="@dimen/md_size"
+    android:padding="@dimen/sm_b_size"
     android:background="@drawable/round_line_dark_pri">
 
     <FrameLayout
@@ -13,9 +13,10 @@
         >
         <ImageView
             android:padding="@dimen/sm_size"
-            android:layout_width="@dimen/card_image_size"
-            android:layout_height="@dimen/card_image_size"
+            android:layout_width="@dimen/card_image_sm_size"
+            android:layout_height="@dimen/card_image_sm_size"
             android:layout_gravity="center"
+            android:id="@+id/student_card_image"
             />
     </FrameLayout>
 
@@ -38,10 +39,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="@dimen/md_lg_font"
+            android:textSize="@dimen/md_b_font"
             android:text="UserName"
             android:layout_gravity="left"
-            android:layout_marginBottom="@dimen/sm_size"/>
+            android:layout_marginBottom="@dimen/sm_size"
+            android:id="@+id/student_card_username"
+
+            />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -53,16 +57,20 @@
                 android:layout_height="wrap_content"
                 android:paddingRight="@dimen/md_size"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="@dimen/md_lg_font"
-                android:text="Name"/>
+                android:textSize="@dimen/md_b_font"
+                android:text="Name"
+                android:id="@+id/student_card_name"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="@dimen/md_size"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="@dimen/md_lg_font"
-                android:text="lastName"/>
+                android:textSize="@dimen/md_b_font"
+                android:text="lastName"
+                android:id="@+id/student_card_lastName"
+                />
 
 
         </LinearLayout>
